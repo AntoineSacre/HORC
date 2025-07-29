@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO/"
+     xml:base="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO/"
+     xmlns:ISO="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO">
+        <rdfs:comment xml:lang="en">This is an ontology about ISO Standard</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#conveys -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#conveys">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Objectively_Verifiable_Criteria"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#hasClauses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#hasClauses">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO/ISO_International_Standard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Clause"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#indicates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#indicates">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Scope"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Limits_of_applicability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#hasContent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#hasContent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Clause"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#hasCriteria -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#hasCriteria">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Objectively_Verifiable_Criteria"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#hasID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Clause"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#hasLimits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#hasLimits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Limits_of_applicability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#hasReference -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#hasReference">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO/ISO_International_Standard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Capability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Capability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Statement"/>
+        <rdfs:comment xml:lang="en">Indicates the ability, suitability, or quality required to do or achieve something. Like the possibility, it is expressed using the verb &apos;can&apos;. The negative form &apos;can not&apos; also be used (from clause 3.3.7 of ISO/IEC Directives Part 2: Principles and rules for the structure and drafting of ISO and IEC documents)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Clause -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Clause">
+        <rdfs:comment xml:lang="en">They form the core elements of the content in each document. Each other entities are subclasses of clauses. (From Clause 22 of ISO/IEC Directives Part 2: Principles and rules for the structure and drafting of ISO and IEC documents)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#External_constraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#External_constraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Provision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Instruction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Instruction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Provision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Limits_of_applicability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Limits_of_applicability">
+        <rdfs:comment>Sentences in the form &quot;This document is (not) applicable to ...&quot; (from clause 14 of ISO/IEC Directives Part 2: Principles and rules for the structure and drafting of ISO and IEC documents).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Normative_Reference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Normative_Reference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Clause"/>
+        <rdfs:comment xml:lang="en">The normative references list documents which are cited in the text and are part of the requirements of the documen (from clause 15 of ISO/IEC Directives Part 2: Principles and rules for the structure and drafting of ISO and IEC documents)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Objectively_Verifiable_Criteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Objectively_Verifiable_Criteria"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Permission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Permission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Statement"/>
+        <rdfs:comment>Indicates consent, freedom, or the opportunity to do something. It is expressed using the verb &apos;may&apos; (from clause 3.3.5 of ISO/IEC Directives Part 2: Principles and rules for the structure and drafting of ISO and IEC documents)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Possibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Possibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Statement"/>
+        <rdfs:comment>Indicates an expected or possible material, physical, or causal outcome. It is expressed using the verb &apos;can&apos;. The negative form &apos;can not&apos; also be used(from clause 3.3.6 of ISO/IEC Directives Part 2: Principles and rules for the structure and drafting of ISO and IEC documents)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Provision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Provision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Clause"/>
+        <rdfs:comment xml:lang="en">In a normative document, a provision is an expression that forms part of the document&apos;s content. It can take the form of a statement, an instruction, a recommendation, a requirement, or an external constraint. These forms are distinguished by their wording: the imperative mood, the use of &apos;should&apos;, or &apos;shall&apos; (from clause 3.3.1 of ISO/IEC Directives Part 2: Principles and rules for the structure and drafting of ISO and IEC documents)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Recommendation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Recommendation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Provision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Provision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Scope -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Scope">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Clause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Statement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Statement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Provision"/>
+        <rdfs:comment>A statement is a non-binding expression that can take the form of permission, possibility or capability (from clause 3.3.2 of ISO/IEC Directives Part 2: Principles and rules for the structure and drafting of ISO and IEC documents).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Terms_and_definition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Terms_and_definition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Clause"/>
+        <rdfs:comment>Terms and definitions define key terms used in the document (from clause 16 of ISO/IEC Directives Part 2: Principles and rules for the structure and drafting of ISO and IEC documents)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO/ISO_International_Standard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO/ISO_International_Standard"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Clause_4.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Clause_4.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Requirement"/>
+        <ISO:conveys rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#4.1_criteria"/>
+        <ISO:hasContent>The organization shall determine external and internal issues that are relevant to its purpose and that affect its ability to achieve the intended outcome(s) of its information security management system</ISO:hasContent>
+        <ISO:hasID>4.1</ISO:hasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#27001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#27001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO/ISO_International_Standard"/>
+        <ISO:hasClauses rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Clause_4.1"/>
+        <ISO:hasClauses rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#27001_Scope"/>
+        <ISO:hasReference>27001:2022 ﻿Information security, cybersecurity and privacy protection — Information security management systems — Requirements</ISO:hasReference>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#27001_Applicability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#27001_Applicability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Limits_of_applicability"/>
+        <ISO:hasLimits>The document is not limited by: Organisation type (public/private, NGO, etc.), Size (small, medium, large) or Nature (sector, activity). 
+All requirements in Clauses 4 to 10 must be addressed for conformity.</ISO:hasLimits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#27001_Scope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#27001_Scope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Scope"/>
+        <ISO:indicates rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#27001_Applicability"/>
+        <ISO:hasContent>﻿This document specifies the requirements for establishing, implementing, maintaining and continually improving an information security management system within the context of the organization. This document also includes requirements for the assessment and treatment of information security risks tailored to the needs of the organization. The requirements set out in this document are generic and are intended to be applicable to all organizations, regardless of type, size or nature. Excluding any of the requirements specified in Clauses 4 to 10 is not acceptable when an organization claims conformity to this document.</ISO:hasContent>
+        <ISO:hasID>1</ISO:hasID>
+        <rdfs:comment>The scope defines the document&apos;s subject and what it covers, it contains statement about limits of applicability of the document or parts of it. (From Clause 14 of ISO/IEC Directives Part 2: Principles and rules for the structure and drafting of ISO and IEC documents).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#4.1_criteria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#4.1_criteria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Objectively_Verifiable_Criteria"/>
+        <ISO:hasCriteria>Documented internal and external issue list</ISO:hasCriteria>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Capability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Permission"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Possibility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#External_constraint"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Instruction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Recommendation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Requirement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Statement"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Normative_Reference"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Provision"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Scope"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/5/ISO#Terms_and_definition"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

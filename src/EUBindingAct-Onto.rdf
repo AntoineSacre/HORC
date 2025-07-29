@@ -1,0 +1,383 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct/"
+     xml:base="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:EUBindingAct="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Article"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Annex"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Definition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Enacting_Term"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Preamble"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Subject_Matter_and_Scope"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#part_of_act -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#part_of_act">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Annex"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Enacting_Term"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Preamble"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#EU_Legal_Act"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#part_of_enacting_term -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#part_of_enacting_term">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Definition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Procedural_Provision"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Rights_and_obligations"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Subject_Matter_and_Scope"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Enacting_Term"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#part_of_normative_content -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#part_of_normative_content">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Provision"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Annex"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Procedural_Provision"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Rights_and_obligations"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#hasContent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#hasContent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#hasNumbering -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#hasNumbering">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#rule_scope -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#rule_scope">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Provision"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>information needed to understand how to apply rules</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#EU_Legal_Act"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Title is the heading of the act used for identification, usually followed by technical information (reference, serial number etc.) (Clause 7.1 of Joint Practical Guide, Second Edition, 2015)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Annex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Annex">
+        <rdfs:comment xml:lang="en">Material too voluminous or technical to be included in the body of the enacting terms (Clause 22.1 of Joint Practical Guide, Second Edition, 2015)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Article -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Article">
+        <rdfs:comment>The smallest self-contained content units, numbered continuously. If subdivided, the subdivisions (paragraphs, sub-paragraphs, or points) remain part of the same unit (Clause 15.4 of Joint Practical Guide, Second Edition, 2015)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Binding_Act -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Binding_Act">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#EU_Legal_Act"/>
+        <rdfs:comment xml:lang="en">Acts that define rules by including provisions using the imperative forms, which provide the information needed to understand and apply them correctly (Clause 12.1 of Joint Practical Guide, Second Edition, 2015)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Definition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Definition">
+        <rdfs:comment xml:lang="en">Definitions of ambiguous elements at the beginning of the ennacting term (Clause 14 of Joint Practical Guide, Second Edition, 2015</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#EU_Legal_Act -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#EU_Legal_Act">
+        <rdfs:comment xml:lang="en">EU legal acts are instruments defined by Article 288 of the Treaty on the Functioning of the European Union, including binding acts such as regulations, directives and decisions, as well as non-binding acts like recommendations and opinions, used across EU Member State.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Enacting_Term -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Enacting_Term">
+        <rdfs:comment xml:lang="en">Legislative part of the act, structured with articles. From other things, it contains the normative parts of the act that consists of the Rights and Obligations and the Procedural Provision (Clause 7.3 of Joint Practical Guide, Second Edition, 2015)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Preamble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Preamble">
+        <rdfs:comment xml:lang="en">All content between the title and the enacting terms (namely citations or recitals) (Clause 7.2 of Joint Practical Guide, Second Edition, 2015)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Procedural_Provision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Procedural_Provision">
+        <rdfs:comment xml:lang="en">Provisions defining how the rules or obligations are to be implemented, applied or enforced (Clause 15.2 of Joint Practical Guide, Second Edition, 2015)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Provision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Provision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Article"/>
+        <rdfs:comment>Provisions are all articles that contain normative content. In the case of binding rules, they express the rules themselves along with the information needed to understand and apply them, such as the scope or definitions (Clause 12.1 of Joint Practical Guide, Second Edition, 2015)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Rights_and_obligations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Rights_and_obligations">
+        <rdfs:comment xml:lang="en">Normative part of the act, can have diverse forms depending on the objective of the act (Clause 15.2 of Joint Practical Guide, Second Edition, 2015).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Subject_Matter_and_Scope -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Subject_Matter_and_Scope">
+        <rdfs:comment xml:lang="en">Part that describes the subject of the act at the beginning of the enacting terms (Clause 13.1 of Joint Practical Guide, Second Edition, 2015)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Annex_i_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Annex_i_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Provision"/>
+        <EUBindingAct:part_of rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Annex_i"/>
+        <EUBindingAct:hasContent>﻿Devices shall achieve the performance intended by their manufacturer and shall be designed and manufactured in such a way that, during normal conditions of use, they are suitable for their intended purpose. They shall be safe and effective and shall not compromise the clinical condition or the safety of patients, or the safety and health of users or, where applicable, other persons, provided that any risks which may be associated with their use constitute acceptable risks when weighed against the benefits to the patient and are compatible with a high level of protection of health and safety, taking into account the generally acknowledged state of the art.</EUBindingAct:hasContent>
+        <EUBindingAct:hasNumbering>Article 1</EUBindingAct:hasNumbering>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Definition_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Definition_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Article"/>
+        <EUBindingAct:part_of rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Definition"/>
+        <EUBindingAct:hasContent>‘active device’ means any device, the operation of which depends on a source of energy other than that generated by the human body for that purpose, or by gravity, and which acts by changing the density of or converting that energy. Devices intended to transmit energy, substances or other elements between an active device and the patient, without any significant change, shall not be deemed to be active devices. Software shall also be deemed to be an active device;</EUBindingAct:hasContent>
+        <EUBindingAct:hasNumbering>(4)</EUBindingAct:hasNumbering>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Binding_Act"/>
+        <EUBindingAct:title>﻿REGULATION (EU) 2017/745 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 5 April 2017 on medical devices, amending Directive 2001/83/EC, Regulation (EC) No 178/2002 and Regulation (EC) No 1223/2009 and repealing Council Directives 90/385/EEC and 93/42/EEC</EUBindingAct:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Annex_i -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Annex_i">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Annex"/>
+        <EUBindingAct:part_of_act rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Definition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Definition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Definition"/>
+        <EUBindingAct:part_of_act rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Enacting_Term -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Enacting_Term">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Enacting_Term"/>
+        <EUBindingAct:part_of_act rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Preamble -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Preamble">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Preamble"/>
+        <EUBindingAct:part_of_act rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Procedural_Provision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Procedural_Provision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Procedural_Provision"/>
+        <EUBindingAct:part_of_enacting_term rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Enacting_Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Rights_and_Obligations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Rights_and_Obligations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Rights_and_obligations"/>
+        <EUBindingAct:part_of_enacting_term rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Enacting_Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Subject_Matter_and_Scope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Subject_Matter_and_Scope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Subject_Matter_and_Scope"/>
+        <EUBindingAct:part_of_enacting_term rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Enacting_Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Procedural_Provision_x -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Procedural_Provision_x">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Provision"/>
+        <EUBindingAct:part_of rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Procedural_Provision"/>
+        <EUBindingAct:hasContent>The competent authorities shall perform appropriate checks on the conformity characteristics and performance of devices including, where appropriate, a review of documentation and physical or laboratory checks on the basis of adequate samples. The competent authorities shall, in particular, take account of established principles regarding risk assessment and risk management, vigilance data and complaints.</EUBindingAct:hasContent>
+        <EUBindingAct:hasNumbering>Article 93.1</EUBindingAct:hasNumbering>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Recital_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Recital_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Article"/>
+        <EUBindingAct:part_of rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Preamble"/>
+        <EUBindingAct:hasContent>﻿Council Directive 90/385/EEC (3) and Council Directive 93/42/EEC (4) constitute the Union regulatory framework for medical devices, other than in vitro diagnostic medical devices. However, a fundamental revision of those Directives is needed to establish a robust, transparent, predictable and sustainable regulatory framework for medical devices which ensures a high level of safety and health whilst supporting innovation</EUBindingAct:hasContent>
+        <EUBindingAct:hasNumbering>(1)</EUBindingAct:hasNumbering>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Rights_and_Obligations_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Rights_and_Obligations_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Provision"/>
+        <EUBindingAct:part_of rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Rights_and_Obligations"/>
+        <EUBindingAct:hasContent>﻿A device may be placed on the market or put into service only if it complies with this Regulation when duly supplied and properly installed, maintained and used in accordance with its intended purpose.</EUBindingAct:hasContent>
+        <EUBindingAct:hasNumbering>Article 5.1</EUBindingAct:hasNumbering>
+        <EUBindingAct:rule_scope>if the device complies with this Regulation when duly supplied and properly installed, maintained and used in accordance with its intended purpose</EUBindingAct:rule_scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Subject_matter_and_scope_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Subject_matter_and_scope_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#Article"/>
+        <EUBindingAct:part_of rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/EUBindingAct#MDR_Subject_Matter_and_Scope"/>
+        <EUBindingAct:hasContent>This Regulation lays down rules concerning the placing on the market, making available on the market or putting into service of medical devices for human use and accessories for such devices in the Union. This Regulation also applies to clinical investigations concerning such medical devices and accessories conducted in the Union.</EUBindingAct:hasContent>
+        <EUBindingAct:hasNumbering>Article 1.1</EUBindingAct:hasNumbering>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

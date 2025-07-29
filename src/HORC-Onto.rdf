@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology/"
+     xml:base="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:harmonized-ontology="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#conveys -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#conveys">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Rule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Objectively_Verifiable_Criteria"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#indicates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#indicates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Scope"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Limits_of_applicability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#originates_from -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#originates_from">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Limits_of_applicability"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Article"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#part_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Article"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Annex"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Definition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Normative_References"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Preamble"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Scope"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#part_of_annex -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#part_of_annex">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Provision"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Annex"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#part_of_document -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#part_of_document">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Annex"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Enacting_Term"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Preamble"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Normative_Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#part_of_enacting_term -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#part_of_enacting_term">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Definition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Normative_References"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Provision"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Scope"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Enacting_Term"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#hasContent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#hasContent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#hasCriteria -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#hasCriteria">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Objectively_Verifiable_Criteria"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#hasLimits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#hasLimits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Limits_of_applicability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#hasNumbering -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#hasNumbering">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Normative_Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Annex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Annex"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Article -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Article"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Capability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Capability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Definition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Definition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Enacting_Term -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Enacting_Term"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#External_Contraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#External_Contraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Provision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Instruction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Instruction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Provision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Limits_of_applicability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Limits_of_applicability"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Normative_Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Normative_Document"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Normative_References -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Normative_References"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Objectively_Verifiable_Criteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Objectively_Verifiable_Criteria"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Permission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Permission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Possibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Possibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Preamble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Preamble"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Procedural_Provision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Procedural_Provision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Provision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Provision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Provision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Recommendation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Recommendation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Provision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Rule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Rule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Provision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Scope -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Scope"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Statement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Statement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Provision"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Clause_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Clause_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Article"/>
+        <harmonized-ontology:part_of rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Scope"/>
+        <harmonized-ontology:hasContent>This document specifies the requirements for establishing, implementing, maintaining and continually improving an information security management system within the context of the organization...</harmonized-ontology:hasContent>
+        <harmonized-ontology:hasNumbering>Clause 1</harmonized-ontology:hasNumbering>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Clause_4.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Clause_4.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Rule"/>
+        <harmonized-ontology:conveys rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#4.1_Criteria"/>
+        <harmonized-ontology:part_of_enacting_term rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Requirements"/>
+        <harmonized-ontology:hasContent>The organization shall determine external and internal issues that are relevant to its purpose and that affect its ability to achieve the intended outcome(s) of its information security management system.</harmonized-ontology:hasContent>
+        <harmonized-ontology:hasNumbering>Clause 4.1</harmonized-ontology:hasNumbering>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Normative_Document"/>
+        <harmonized-ontology:title>﻿Information security, cybersecurity and privacy protection — Information security management systems — Requirements</harmonized-ontology:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Applicability_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Applicability_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Limits_of_applicability"/>
+        <harmonized-ontology:originates_from rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Clause_1"/>
+        <harmonized-ontology:hasLimits>The document is not limited by: Organisation type, Size, or Nature (sector, activity). All requirements in Clauses 4 to 10 must be addressed for conformity.</harmonized-ontology:hasLimits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Requirements -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Requirements">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Enacting_Term"/>
+        <harmonized-ontology:part_of_document rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Scope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Scope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Scope"/>
+        <harmonized-ontology:part_of_enacting_term rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Requirements"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#4.1_Criteria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#4.1_Criteria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Objectively_Verifiable_Criteria"/>
+        <harmonized-ontology:hasCriteria>Documented internal and external issue list.</harmonized-ontology:hasCriteria>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
