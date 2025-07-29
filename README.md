@@ -1,2 +1,3 @@
-# HORC
-Harmonized Ontology for Regulatory Compliance
+# Harmonized Ontology for Regulatory Compliance (HORC)
+
+The Harmonized Ontology for Regulatory Compliance is ...
