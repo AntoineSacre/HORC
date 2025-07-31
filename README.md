@@ -38,73 +38,44 @@ The ontology is OWL-compliant and built using [Protégé](https://protege.stanfo
 
 ## Classes
 
-`Normative Document`: A document or act that sets out rules to be followed by its intended audience. Includes both ISO international standards and EU binding legal acts (e.g. EU regulations and directives). Content may be followed voluntarily or under legal obligation.
-
-`Article`: A structural unit of content. Articles are the smallest self-contained units, numbered continuously throughout the document. Called "clauses" in ISO standards. Can be subdivided into paragraphs or points.
-
-`Preamble`: All content between the title and enacting terms (e.g. introduction, citations, recitals).
-
-`Enacting Terms`: Normative part of the document, structured with articles. Includes normative references, scope, definitions, and provisions.
-
-`Annex`: Material too voluminous or technical to be included in the body of the enacting terms.
-
-`Normative References`: Documents cited in the text that form part of the document’s requirements.
-
-`Scope`: Defines the boundaries and applicability of the document. Describes subject, covered situations, audience, and limits.
-
-`Limits of applicability`: In ISO, statements like “This document is (not) applicable to …”
-
-`Definition`: Provides formal definitions for key terms.
-
-`Provision`: Articles with enforceable content and context for application (scope, conditions). Define what must/should/may be done.
-
-`Rule`: A type of provision prescribing obligations or prohibitions (e.g. "shall", "must"). Expressed as requirements (ISO) or rights/obligations (EU). May include conditions of applicability.
-
-`Objectively Verifiable Criteria`: In ISO, expectations expressed in a way that fulfilment can be confirmed with objective evidence.
-
-`Statement`: A non-binding expression, e.g. permission, possibility, capability.
-
-`Permission`: Indicates consent or freedom to act. Uses the verb "may".
-
-`Possibility`: Indicates an expected or possible outcome. Uses the verb "can".
-
-`Capability`: Indicates ability or suitability. Also uses "can".
-
-`Instruction`: Sentences written in the imperative mood.
-
-`Recommendation`: Suggests an appropriate action using “should” or “should not”.
-
-`External Constraint`: Obligations on the user not stated as provisions. Uses “must” (but not “must not”).
-
-`Procedural Provision`: Defines how rules should be implemented, applied, or enforced.
+- `Normative Document`: A document or act that sets out rules to be followed by its intended audience. Includes both ISO international standards and EU binding legal acts (e.g. EU regulations and directives). Content may be followed voluntarily or under legal obligation.
+- `Article`: A structural unit of content. Articles are the smallest self-contained units, numbered continuously throughout the document. Called "clauses" in ISO standards. Can be subdivided into paragraphs or points.
+- `Preamble`: All content between the title and enacting terms (e.g. introduction, citations, recitals).
+- `Enacting Terms`: Normative part of the document, structured with articles. Includes normative references, scope, definitions, and provisions.
+- `Annex`: Material too voluminous or technical to be included in the body of the enacting terms.
+- `Normative References`: Documents cited in the text that form part of the document’s requirements.
+- `Scope`: Defines the boundaries and applicability of the document. Describes subject, covered situations, audience, and limits.
+- `Limits of applicability`: In ISO, statements like “This document is (not) applicable to …”
+- `Definition`: Provides formal definitions for key terms.
+- `Provision`: Articles with enforceable content and context for application (scope, conditions). Define what must/should/may be done.
+- `Rule`: A type of provision prescribing obligations or prohibitions (e.g. "shall", "must"). Expressed as requirements (ISO) or rights/obligations (EU). May include conditions of applicability.
+- `Objectively Verifiable Criteria`: In ISO, expectations expressed in a way that fulfilment can be confirmed with objective evidence.
+- `Statement`: A non-binding expression, e.g. permission, possibility, capability.
+- `Permission`: Indicates consent or freedom to act. Uses the verb "may".
+- `Possibility`: Indicates an expected or possible outcome. Uses the verb "can".
+- `Capability`: Indicates ability or suitability. Also uses "can".
+- `Instruction`: Sentences written in the imperative mood.
+- `Recommendation`: Suggests an appropriate action using “should” or “should not”.
+- `External Constraint`: Obligations on the user not stated as provisions. Uses “must” (but not “must not”).
+- `Procedural Provision`: Defines how rules should be implemented, applied, or enforced.
 
 ## Object Properties
 
-`part_of_document`: Links legal content to its regulatory document.
-
-`part_of_enacting_term`: Links normative content to enacting terms.
-
-`part_of`: Links articles to their containing entities.
-
-`part_of_annex`: Links provisions to the annexes expressing them.
-
-`indicates`: Links scope to its limits of applicability.
-
-`conveys`: Links rules to the objectively verifiable criteria they express.
-
-`originates_from`: Links limits of applicability to the article they originate from.
+- `part_of_document`: Links legal content to its regulatory document.
+- `part_of_enacting_term`: Links normative content to enacting terms.
+- `part_of`: Links articles to their containing entities.
+- `part_of_annex`: Links provisions to the annexes expressing them.
+- `indicates`: Links scope to its limits of applicability.
+- `conveys`: Links rules to the objectively verifiable criteria they express.
+- `originates_from`: Links limits of applicability to the article they originate from.
 
 ## Data Properties
 
-`title`: Title of the Normative Document.
-
-`hasContent`: Literal textual content of articles.
-
-`hasNumbering`: Supports traceability to article numbering.
-
-`hasLimits`: Content of the limits of applicability.
-
-`hasCriteria`: Criteria content within Objectively Verifiable Criteria.
+- `title`: Title of the Normative Document.
+- `hasContent`: Literal textual content of articles.
+- `hasNumbering`: Supports traceability to article numbering.
+- `hasLimits`: Content of the limits of applicability.
+- `hasCriteria`: Criteria content within Objectively Verifiable Criteria.
 
 ---
 
