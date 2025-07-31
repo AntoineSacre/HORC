@@ -7,7 +7,7 @@ HORC is a cross-domain ontology for representing **ISO international standards**
 ## What is HORC?
 
 HORC harmonises two regulatory ontologies:
-- One based on ISO International Standards using the [ISO/IEC Directives Part 2]([url](https://boss.cen.eu/media/yypjl3mn/iso_iec_directives_part2.pdf)): "Principles and rules for the structure and drafting of ISO and IEC documents ». 
+- One based on ISO International Standards using the [ISO/IEC Directives Part 2](https://boss.cen.eu/media/yypjl3mn/iso_iec_directives_part2.pdf): "Principles and rules for the structure and drafting of ISO and IEC documents ». 
 - One based on EU binding legal acts using the [Joint Practical Guide]([url]eur-lex.europa.eu/content/techleg/KB0213228ENN.pdf) by the European Parliament, the Council and the Commission.
 
 The harmonisation process has been carried out based on the [ISO 860 methodology on terminology harmonisation]([url](https://www.iso.org/fr/standard/40130.html)) with a choice for applying the least restrictive approach to preserve the expressiveness of both ontologies. This means the overlapping concepts were aligned and he unique elements from each ontologies were carry over to retain their full expressiveness.
