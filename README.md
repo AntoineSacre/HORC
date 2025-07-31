@@ -82,9 +82,11 @@ The ontology is OWL-compliant and built using [Protégé](https://protege.stanfo
 ## Example
 
 **ISO/IEC 27001**: Clause 1 (Scope), Clause 4.1
+
 <img width="638" height="378" alt="image" src="https://github.com/user-attachments/assets/d35e5ddb-8e9b-4151-9f1d-813653d84ff3" />
 
 **Medical Device Regulation**: Recital 1, Article 1.1 (Scope), Article 2.4 (Definition), Article 5.1, Article 93.1, Annex i.1
+
 <img width="638" height="555" alt="image" src="https://github.com/user-attachments/assets/91323049-5d6b-4e1b-bfbb-3e086a3b0591" />
 
 These sample instantiations can be found in the `/examples` folder.
