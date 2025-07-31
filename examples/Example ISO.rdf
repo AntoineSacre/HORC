@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology/"
+     xml:base="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:harmonized-ontology="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology"/>
+    
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Clause_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Clause_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Article"/>
+        <harmonized-ontology:part_of rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Scope"/>
+        <harmonized-ontology:hasContent>This document specifies the requirements for establishing, implementing, maintaining and continually improving an information security management system within the context of the organization...</harmonized-ontology:hasContent>
+        <harmonized-ontology:hasNumbering>Clause 1</harmonized-ontology:hasNumbering>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Clause_4.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Clause_4.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Rule"/>
+        <harmonized-ontology:conveys rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#4.1_Criteria"/>
+        <harmonized-ontology:part_of_enacting_term rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Requirements"/>
+        <harmonized-ontology:hasContent>The organization shall determine external and internal issues that are relevant to its purpose and that affect its ability to achieve the intended outcome(s) of its information security management system.</harmonized-ontology:hasContent>
+        <harmonized-ontology:hasNumbering>Clause 4.1</harmonized-ontology:hasNumbering>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Normative_Document"/>
+        <harmonized-ontology:title>﻿Information security, cybersecurity and privacy protection — Information security management systems — Requirements</harmonized-ontology:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Applicability_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Applicability_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Limits_of_applicability"/>
+        <harmonized-ontology:originates_from rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Clause_1"/>
+        <harmonized-ontology:hasLimits>The document is not limited by: Organisation type, Size, or Nature (sector, activity). All requirements in Clauses 4 to 10 must be addressed for conformity.</harmonized-ontology:hasLimits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Requirements -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Requirements">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Enacting_Term"/>
+        <harmonized-ontology:part_of_document rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Scope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Scope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Scope"/>
+        <harmonized-ontology:part_of_enacting_term rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#ISO_27001_Requirements"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#4.1_Criteria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#4.1_Criteria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/antoine/ontologies/2025/6/harmonized-ontology#Objectively_Verifiable_Criteria"/>
+        <harmonized-ontology:hasCriteria>Documented internal and external issue list.</harmonized-ontology:hasCriteria>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
