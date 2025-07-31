@@ -1,32 +1,39 @@
 # Harmonized Ontology for Regulatory Compliance (HORC)
 
-HORC is a cross-domain ontology for representing and assessing regulatory and standardisation rules from **ISO international standards** and **EU binding legal acts** in a structured, machine-readable format.
+HORC is a cross-domain ontology for representing **ISO international standards** and **EU binding acts** in a structured, machine-readable format, and allow for assessing regulatory compliance.
 
 ---
 
 ## What is HORC?
 
+HORC harmonises two regulatory ontologies:
+- One based on ISO International Standards using the [ISO/IEC Directives Part 2]([url](https://boss.cen.eu/media/yypjl3mn/iso_iec_directives_part2.pdf)): "Principles and rules for the structure and drafting of ISO and IEC documents ». 
+- One based on EU binding legal acts using the [Joint Practical Guide]([url]eur-lex.europa.eu/content/techleg/KB0213228ENN.pdf) by the European Parliament, the Council and the Commission.
+
+The harmonisation process has been carried out based on the [ISO 860 methodology on terminology harmonisation]([url](https://www.iso.org/fr/standard/40130.html)) with a choice for applying the least restrictive approach to preserve the expressiveness of both ontologies. This means the overlapping concepts were aligned and he unique elements from each ontologies were carry over to retain their full expressiveness.
+
 The Harmonized Ontology for Regulatory Compliance (HORC) is designed to:
-- Support **automatic compliance assessment** of software systems.
 - Enable **Ontology-Based Information Extraction (OBIE)** from legal and standard documents.
-- Integrate compliance reasoning directly into software development.
 - Align regulatory concepts across multiple legal sources.
 
-HORC harmonises two formally defined regulatory ontologies:
-- One based on ISO international standards using ISO/IEC Directives Part 2.
-- One based on EU binding legal acts using the Joint Practical Guide.
+The harmonized ontology is aim to represent regulatory and standardisation rules in a structured, high-level and machine-readable form. 
+It support compatibility across both **ISO international technical standards** and **European binding legal acts**. 
 
-The harmonisation follows the ISO 860 methodology for terminology alignment, resolving both structural and semantic mismatches. The result is a unified OWL ontology compatible with both document types.
+The model built following the HORC are intended to support tasks as:
+- Identifying all applicable rules from multiple sources for a given scenario or system.
+- Tracking the origin and legal status of each rules to support compliance checks
+- Linking Rules and concepts like Scope, Article or Definition from multiple sources.
+- Mapping concepts from multiple sources and avoid duplication or contradiction in compliance checks.
 
 ---
 
 ## Ontology Overview
 
 HORC includes:
-- Core classes: `Normative_Document`, `Article`, `Provision`, `Rule`, `Scope`, `Limits_of_applicability`, `Objectively_Verifiable_Criteria`, etc.
-- Key properties: `hasContent`, `hasNumbering`, `conveys`, `part_of_document`, `originates_from`, etc.
+- Core classes: `Normative_Document`, `Article`, `Provision`, `Rule`, `Scope`, `Limits_of_applicability`, `Objectively_Verifiable_Criteria`
+- Key properties: `hasContent`, `hasNumbering`, `conveys`, `part_of_document`, `originates_from`
 - Alignment logic that connects ISO and EU document structures into a common model.
-- Support for traceability and compliance reasoning.
+- Support for traceability.
 
 The ontology is OWL-compliant and built using [Protégé](https://protege.stanford.edu/).
 
